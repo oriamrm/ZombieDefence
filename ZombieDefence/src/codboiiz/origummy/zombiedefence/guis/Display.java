@@ -42,7 +42,7 @@ public class Display extends JPanel implements ActionListener{
 		
 				
 		//Entities
-		EntityManager.entities.forEach((uuid, entity) -> {
+		EntityManager.entities.forEach((uuid, entity) -> { //We need to create an Entity Manager class
 			g.setColor(entity.color);
 			if (entity instanceof PolyEntity) {
 			//	g.fillRect(Math.round(Math.round(((PolyEntity) entity).getPoly().xcords[0])), Math.round(Math.round(((PolyEntity) entity).getPoly().ycords[0])), 50, 50);

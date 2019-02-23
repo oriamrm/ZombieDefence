@@ -18,7 +18,7 @@ private static final long serialVersionUID = Main.version;
 		c.setBounds((int) Math.round(Main.frame.getWidth()*0.375-200), 900, 200, 50);
 		c.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//What the button does, for example:
+			//	What the button does, for example:
 			//	Main.engine();
 			//	Main.startGame();
 			}
