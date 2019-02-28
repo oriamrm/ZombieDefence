@@ -4,7 +4,9 @@ A group of friends survive the apocalypse, and unite to defend themselves from t
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Inspired By: https://armorgames.com/play/1443/the-last-stand-2?tag-referral=zombie
+Inspired By:
+- https://armorgames.com/play/1443/the-last-stand-2?tag-referral=zombie
+- https://gamejolt.com/games/critical-annihilation/30346
 
 Temporary name, if you have suggestions you are welcome to add them.
 
