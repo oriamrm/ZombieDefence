@@ -18,7 +18,7 @@ import codboiiz.origummy.zombiedefence.Main;
 public class Display extends JPanel implements ActionListener{
 	private static final long serialVersionUID = Main.version;
 	
-	public static Map<UUID, Polygon> polygons = new HashMap<UUID, Polygon>();
+	public static Map<String, Polygon> polygons = new HashMap<String, Polygon>();
 	
 	final static int fps = 100;
 //	public static Map map;

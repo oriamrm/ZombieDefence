@@ -1,6 +1,7 @@
 package codboiiz.origummy.zombiedefence;
 
 import java.awt.Polygon;
+import java.util.Timer;
 import java.util.UUID;
 
 import javax.swing.JFrame;
@@ -9,7 +10,7 @@ import codboiiz.origummy.zombiedefence.guis.Display;
 import codboiiz.origummy.zombiedefence.guis.Launcher;
 
 public class Main {
-
+	public Timer engine = new Timer("Game Engine");
 	public static JFrame frame = new JFrame();
 	public static long version = 0;
 	
@@ -41,7 +42,10 @@ public class Main {
 		
 		
 		
-		Display.polygons.put(new UUID(1, 1), new Polygon(new int[] {50, 150, 300, 70}, new int[] {50, 70, 150, 300}, 4));
+		Display.polygons.put("Test", new Polygon(new int[] {50, 150, 300, 70}, new int[] {50, 70, 150, 300}, 4));
+	//	Corners: (50,50), (150,70), (300,150)
+		// "TimerTask"
+		
 	}
 
 }
