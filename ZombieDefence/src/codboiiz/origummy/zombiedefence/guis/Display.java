@@ -62,6 +62,7 @@ public class Display extends JPanel implements ActionListener{
 			}
 		});
 		*/
+		//
 		
 		return bufImg;
 	}

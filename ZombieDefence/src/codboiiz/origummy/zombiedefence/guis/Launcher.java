@@ -32,7 +32,7 @@ private static final long serialVersionUID = Main.version;
 	
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
-		
+		//
 		//Things to paint on the panel
 		g.drawString("Hello Launcher", Main.frame.getWidth() / 2 - 300, 200);
 	}

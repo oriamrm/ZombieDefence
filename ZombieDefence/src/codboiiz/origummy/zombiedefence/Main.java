@@ -44,7 +44,7 @@ public class Main {
 		
 		Display.polygons.put("Test", new Polygon(new int[] {50, 150, 300, 70}, new int[] {50, 70, 150, 300}, 4));
 	//	Corners: (50,50), (150,70), (300,150)
-		// "TimerTask"
+	// "TimerTask" 
 		
 	}
 
