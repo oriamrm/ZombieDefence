@@ -1,7 +1,11 @@
 package codboiiz.origummy.zombiedefence;
 
+import java.awt.Polygon;
+import java.util.UUID;
+
 import javax.swing.JFrame;
 
+import codboiiz.origummy.zombiedefence.guis.Display;
 import codboiiz.origummy.zombiedefence.guis.Launcher;
 
 public class Main {
@@ -25,6 +29,19 @@ public class Main {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(new Launcher());
 		frame.setVisible(true);
+	}
+	
+	public static void startGame() {
+		Display display = new codboiiz.origummy.zombiedefence.guis.Display();	
+		frame.getContentPane().removeAll();
+		frame.add(display);
+	//	frame.addKeyListener(new Input());
+		frame.requestFocus();
+		frame.setVisible(true);
+		
+		
+		
+		Display.polygons.put(new UUID(1, 1), new Polygon(new int[] {50, 150, 300, 70}, new int[] {50, 70, 150, 300}, 4));
 	}
 
 }

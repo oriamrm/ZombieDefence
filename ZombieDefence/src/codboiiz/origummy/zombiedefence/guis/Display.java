@@ -2,10 +2,13 @@ package codboiiz.origummy.zombiedefence.guis;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Polygon;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -14,6 +17,8 @@ import codboiiz.origummy.zombiedefence.Main;
 
 public class Display extends JPanel implements ActionListener{
 	private static final long serialVersionUID = Main.version;
+	
+	public static Map<UUID, Polygon> polygons = new HashMap<UUID, Polygon>();
 	
 	final static int fps = 100;
 //	public static Map map;
@@ -40,7 +45,12 @@ public class Display extends JPanel implements ActionListener{
 		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, Main.frame.getWidth(), Main.frame.getHeight());
 		
-				
+		g.setColor(Color.RED);
+		polygons.forEach((uuid, poly) -> {
+			g.fillPolygon(poly);
+		});
+		
+		/*
 		//Entities
 		EntityManager.entities.forEach((uuid, entity) -> { //We need to create an Entity Manager class
 			g.setColor(entity.color);
@@ -51,6 +61,7 @@ public class Display extends JPanel implements ActionListener{
 		//		g.drawOval(Math.round(Math.round(entity.getX())), Math.round(Math.round(entity.getY())), entity.getSizeX(), entity.getSizeY());	
 			}
 		});
+		*/
 		
 		return bufImg;
 	}
