@@ -19,7 +19,7 @@ public class Display extends JPanel implements ActionListener{
 	
 	public static Map<String, Polygon> polygons = new HashMap<String, Polygon>();
 	
-	final static int fps = 1000;
+	final static int fps = 240;
 //	public static Map map;
 	Timer timer = new Timer(Math.round(1000/fps), this);
 	

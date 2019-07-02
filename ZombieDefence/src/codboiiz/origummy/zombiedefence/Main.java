@@ -39,7 +39,7 @@ public class Main {
 				poly.translate(1, 0);
 				Display.polygons.put("Test", poly);
 			}
-		}, 0, 1);
+		}, 0, 10);
 	}
 	
 	public static void startGame() {
