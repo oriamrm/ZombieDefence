@@ -16,7 +16,7 @@ public class Main {
 	
 	
 	//NOTE: I imported the fundamental system from BloBattle (A 2D Game I made), with time we will optimize it for ZombieDefence (Or the other name that we will give this game).
-
+	//Learn how to spell Fundamental
 	
 	public static void main(String[] args) {
 		System.out.println("Hello Apocaliptic World");
