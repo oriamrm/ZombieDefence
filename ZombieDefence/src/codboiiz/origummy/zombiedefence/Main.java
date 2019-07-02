@@ -2,7 +2,6 @@ package codboiiz.origummy.zombiedefence;
 
 import java.awt.Polygon;
 import java.util.Timer;
-import java.util.UUID;
 
 import javax.swing.JFrame;
 

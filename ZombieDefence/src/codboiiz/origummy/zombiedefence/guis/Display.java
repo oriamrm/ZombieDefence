@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 import javax.swing.JPanel;
 import javax.swing.Timer;
