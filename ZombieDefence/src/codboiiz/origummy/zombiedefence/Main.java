@@ -14,14 +14,14 @@ public class Main {
 	public static long version = 0;
 	
 	
-	//NOTE: I imported the fundemental system from BloBattle (A 2D Game I made), with time we will optimize it for ZombieDefence (Or the other name that we will give this game).
+	//NOTE: I imported the fundamental system from BloBattle (A 2D Game I made), with time we will optimize it for ZombieDefence (Or the other name that we will give this game).
 
 	
 	public static void main(String[] args) {
 		System.out.println("Hello Apocaliptic World");
 
 		frame.setResizable(false);
-		frame.setSize(2000, 1125);
+		frame.setSize(1920, 1080);
 	//	Map.FRAME_HEIGHT = 1089;
 	//	Map.FRAME_WIDTH = 1993;
 		frame.setLocationRelativeTo(null);
