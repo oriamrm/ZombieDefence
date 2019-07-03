@@ -20,7 +20,6 @@ private static final long serialVersionUID = Main.version;
 			public void actionPerformed(ActionEvent e) {
 				//	What the button does, for example:
 				Main.startGame();
-				Main.mainLoop();
 			//	Main.engine();
 			//	Main.startGame();
 			}
@@ -36,5 +35,6 @@ private static final long serialVersionUID = Main.version;
 		//
 		//Things to paint on the panel
 		g.drawString("Hello Launcher", Main.frame.getWidth() / 2 - 300, 200);
+		new DesignedButton(g, "hello", FONT, 100, 100, 1000, 700, 255, 0, 0, 0, 0, 255, 20);
 	}
 }

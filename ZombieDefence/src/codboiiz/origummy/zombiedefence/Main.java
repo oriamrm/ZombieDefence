@@ -2,7 +2,6 @@ package codboiiz.origummy.zombiedefence;
 
 import java.awt.Polygon;
 import java.util.Timer;
-import java.util.TimerTask;
 
 import javax.swing.JFrame;
 
@@ -30,16 +29,6 @@ public class Main {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(new Launcher());
 		frame.setVisible(true);
-	}
-	
-	public static void mainLoop() {
-		engine.scheduleAtFixedRate(new TimerTask() {
-			public void run() {
-				Polygon poly = Display.polygons.get("Test");
-				poly.translate(1, 0);
-				Display.polygons.put("Test", poly);
-			}
-		}, 0, 10);
 	}
 	
 	public static void startGame() {

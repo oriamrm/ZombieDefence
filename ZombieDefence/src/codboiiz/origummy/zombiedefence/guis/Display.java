@@ -19,7 +19,7 @@ public class Display extends JPanel implements ActionListener{
 	
 	public static Map<String, Polygon> polygons = new HashMap<String, Polygon>();
 	
-	final static int fps = 240;
+	final static int fps = 1000;
 //	public static Map map;
 	Timer timer = new Timer(Math.round(1000/fps), this);
 	
@@ -39,7 +39,7 @@ public class Display extends JPanel implements ActionListener{
 	public BufferedImage getFrame() {
 		BufferedImage bufImg = new BufferedImage(Main.frame.getWidth(), Main.frame.getHeight(), BufferedImage.TYPE_INT_ARGB);
 		Graphics g = bufImg.getGraphics();
-		
+				
 		//Background
 		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, Main.frame.getWidth(), Main.frame.getHeight());
@@ -48,7 +48,7 @@ public class Display extends JPanel implements ActionListener{
 		polygons.forEach((uuid, poly) -> {
 			g.fillPolygon(poly);
 		});
-		
+				
 		/*
 		//Entities
 		EntityManager.entities.forEach((uuid, entity) -> { //We need to create an Entity Manager class
